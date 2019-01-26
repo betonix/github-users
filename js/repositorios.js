@@ -1,5 +1,4 @@
 (function() {
-  console.log(window.location.search);
   get_info_repositories();
 })();
 function get_info_repositories() {
