@@ -1,0 +1,15 @@
+{
+  "name": "projeto-desbravador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": " serve "
+  },
+  "author": "Roberto Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^10.1.1"
+  }
+}

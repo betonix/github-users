@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/contants.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <form class="busca" onsubmit="return false">
+      <input id="username" type="text" placeholder="usuario github" /><button
+        type="submit"
+        onclick="get_info()"
+      >
+        OK
+      </button>
+    </form>
+    <div class="dados">
+      <div class="card">
+        <div class="content">
+          <header><img id="avatar" src="" /><strong id="name"></strong></header>
+          <ul class="info">
+            <li>Seguidores:<small id="seguidores"></small></li>
+            <li>Seguindo:<small id="seguindo"></small></li>
+            <li>Email:<small id="email"></small></li>
+            <li>Bio:<small id="bio"></small></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card repo">
+        <div class="content">
+          <div class="head-repo">
+            <h1>REPOSITORIOS</h1>
+            <button onclick="asc()">ASC</button>
+            <button onclick="desc()">DESC</button>
+          </div>
+
+          <ul id="lista-repo"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
