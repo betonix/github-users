@@ -10,6 +10,6 @@ function get_info_repositories() {
     document.getElementById("desc-repo").innerHTML = resp.description;
     document.getElementById("start-repo").innerHTML = resp.stargazers_count;
     document.getElementById("ling-repo").innerHTML = resp.language;
-    document.getElementById("link-repo").href = resp.url;
+    document.getElementById("link-repo").href = resp.svn_url;
   });
 }
