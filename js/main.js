@@ -36,7 +36,7 @@ function load_repositories(repos) {
     let a = document.createElement("a");
 
     a.appendChild(document.createTextNode("ver"));
-    a.href = "/repositorio?repo=" + repo.full_name;
+    a.href = window.location.href + "repositorio?repo=" + repo.full_name;
     small.appendChild(a);
 
     li.appendChild(document.createTextNode(repo.name));
